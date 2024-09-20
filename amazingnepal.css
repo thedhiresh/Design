@@ -1,0 +1,6 @@
+figure .connectButton img{
+	width:398px!important;
+	height:224px!important;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+}
