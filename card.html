@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 0.8rem;
+            border-radius: 0.5rem;
+            width: 300px;
+            background-color: #fff;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        .container-image {
+            width: 100%;
+            min-height: 180px;
+            background-color: #4c4b4b;
+            height: 180px;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .container-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .container-image img:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            margin: 0.1rem 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        p {
+            margin: 0.5rem 0;
+            color: #666;
+            text-align: center;
+        }
+
+        button {
+            background-color: #333;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            color: white;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        button a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-image">
+            <img src="https://c4.wallpaperflare.com/wallpaper/952/536/1006/winter-4k-pc-desktop-wallpaper-preview.jpg" alt="Winter Landscape">
+        </div>
+        <h2>Card Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas incidunt autem sit eveniet aut numquam dolorum earum tempora ratione.</p>
+        <button><a href="#">Read More</a></button>
+    </div>
+</body>
+</html>
