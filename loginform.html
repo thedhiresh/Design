@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/loginform.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Logo</h2>
+        <form id="loginForm">
+            <div class="icon-input">
+                <i class="fas fa-user icon"></i>
+                <input type="text" placeholder="Type your username..." name="username" class="username" required>
+            </div>
+            <div class="icon-input" style="display: flex; align-items: center;">
+                <i class="fas fa-lock icon"></i>
+                <input type="password" id="password" placeholder="Type Your Password" name="password" required>
+                <button type="button" id="togglePassword" class="toggle-password">
+                    <i class="fas fa-eye" id="toggleIcon"></i>
+                </button>
+            </div>
+            <button type="submit" id="submitBtn">Submit</button>
+            <span class="loading" id="loadingSpinner"><i class="fas fa-spinner fa-spin"></i></span>
+        </form>
+        <p>
+            <a href="#">Forgot your password?</a>
+        </p>
+        <div class="othersignup">
+            <button id="Google"><i class="fab fa-google"></i> Google</button>
+            <button id="Meta"><i class="fab fa-facebook-f"></i> Facebook</button>
+        </div>
+        <p>
+            I don't have an account | <a href="#">Sign Up</a>
+        </p>
+    </div>
+    <script src="./JS/loginform.js"></script>
+
+</body>
+</html>
